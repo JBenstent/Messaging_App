@@ -1,0 +1,7 @@
+<h1>All Contacts</h1>
+
+<% @all_recipients.each do |recipient| %>
+<p>Name: <%= recipient.name %></p>
+<p>Email: <%= recipient.email %></p>
+<hr>
+<% end %>

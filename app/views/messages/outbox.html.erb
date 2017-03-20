@@ -1,0 +1,9 @@
+<h1>Outbox</h1>
+<% @messages_from_user.each do |message| %>
+<p><%= message.recipient.name %>: <%= message.created_at %></p>
+<p><%= message.title %>:</p>
+<p><%= message.content %></p>
+<hr>
+<% end %>
+
+<a href="/">Inbox</a> | <a href="/create/message">Create Message</a> | <a href="/contacts">All Contacts</a>

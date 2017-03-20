@@ -1,0 +1,14 @@
+<h3>Inbox</h3>
+
+<% @messages_for_user.each do |message| %>
+<p><%= message.sender.name %>: <%= message.created_at %></p>
+<p><%= message.title %>:</p>
+<p><%= message.content %></p>
+
+<br><br><br>
+<% end %>
+
+
+<a href="/logout">Logout</a>
+
+<a href="/outbox">Outbox</a>
